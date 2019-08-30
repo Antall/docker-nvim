@@ -30,7 +30,8 @@ COPY install /tmp/install
 RUN /tmp/install/packages.sh
 
 COPY entrypoint.sh /tmp/entrypoint.sh
-COPY config/init.vim /root/.config/nvim/init.vim
+COPY init.vim /root/.config/nvim/init.vim
+COPY custom /root/.config/nvim/custom
 
 RUN \
   /tmp/install/nvim-config.sh; \

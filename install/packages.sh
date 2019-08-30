@@ -9,7 +9,8 @@ apk add --update --no-cache \
   the_silver_searcher \
   python3 \
   neovim \
-  neovim-doc
+  neovim-doc \
+  fzf
 
 apk add --update --no-cache --virtual build-deps \
   build-base \
