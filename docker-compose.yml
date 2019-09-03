@@ -4,3 +4,5 @@ services:
   avim:
     build: .
     image: avim
+    volumes:
+      - "./:/root/workdir/"

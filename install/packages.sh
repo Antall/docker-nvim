@@ -22,7 +22,7 @@ pip3 install neovim
 curl \
   --create-dirs \
   -LSso $VIMPLUG_FILE \
-  $VIMPLUG_URL 
+  $VIMPLUG_URL
 
 apk del build-deps
 
