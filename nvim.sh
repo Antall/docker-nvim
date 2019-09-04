@@ -2,6 +2,12 @@
 
 IMAGE_NAME="avim"
 
+if [ "$(uname)" == "Darwin" ]; then
+  realpath() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+  }
+fi
+
 while [ $# -gt 0 ]; do
   param="$1"
 

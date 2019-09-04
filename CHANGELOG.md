@@ -17,6 +17,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.1] - 2019-09-05
+### Removed
+- Volume mounts from docker compose file
+
+### Fixed
+- realpath is not available on MacOS. Added a script to do something similar to what realpath does on \*unix.
+
+
 ## [v1.0.0] - 2019-09-03
 ### Added
 - Added this CHANGELOG.md file.
@@ -28,16 +36,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - swap between buffers
   - disable arrow keys
 - Added volume to docker-compose file
-- 
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-
-
