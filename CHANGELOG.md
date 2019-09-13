@@ -17,6 +17,35 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.2] - 2019-09-14
+### Added
+- Plugin: NerdCommenter
+- Plugin: Vim-Surround
+- Plugin: Auto-Ctags
+- Plugin: Theme - Base16-Vim
+
+- Plugin: Fugitive
+  - <leader>gs mapping for `git status`
+  - <leader>gc mapping for `git commit`
+  - <leader>gw mapping for `git add`
+  - <leader>gd mapping for `git diff`
+
+- Plugin: Tagbar
+  - <leader>tt mapping for tagbar
+
+- Mappings for NERDTree
+  - <leader>nn mapping to toggle NERDTree
+  - <leader>nf mapping to find file in NERDTree
+
+- Git configuration
+
+### Changed
+- ensure Neovim does not open the first file in working directory.
+- reorganize the `settings.vim` file.
+- do not open NERDTree on launching Neovim.
+- updated the README.
+
+
 ## [v1.0.1] - 2019-09-05
 ### Removed
 - Volume mounts from docker compose file

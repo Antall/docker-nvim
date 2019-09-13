@@ -36,6 +36,7 @@ COPY custom /root/.config/nvim/custom
 
 RUN \
   /tmp/install/nvim-config.sh; \
+  /tmp/install/git-config.sh; \
   /tmp/install/clear.sh
 
 ENTRYPOINT ["/bin/sh", "/tmp/entrypoint.sh"]
