@@ -17,6 +17,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.4] - 2019-09-16
+### Added
+- install openssh-client for fugitive
+
+### Changed
+- mount .ssh directory as RO volume
+
+
 ## [v1.0.3] - 2019-09-16
 ### Added
 - Theme: vim-airline and vim-airline-themes

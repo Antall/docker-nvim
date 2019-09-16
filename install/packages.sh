@@ -10,7 +10,8 @@ apk add --update --no-cache \
   python3 \
   neovim \
   neovim-doc \
-  fzf
+  fzf \
+  openssh-client
 
 apk add --update --no-cache --virtual build-deps \
   build-base \
