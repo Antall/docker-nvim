@@ -53,7 +53,7 @@ autocmd BufNewFile, BufRead *.thor set syntax=ruby
 ""
 "" Theme activation
 ""
-
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 colorscheme base16-default-dark
 set termguicolors
 set background=dark
