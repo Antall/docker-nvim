@@ -17,6 +17,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.6] - 2019-09-23
+### Changed
+- settings
+  - highlight current cursor line
+  - wrap lines
+
+
 ## [v1.0.5] - 2019-09-17
 ### Added
 - set NVIM_TUI_ENABLE_TRUE_COLOR

@@ -62,12 +62,13 @@ set background=dark
 "" Whitespace
 ""
 
-set nowrap                        " don't wrap lines
+set wrap                          " wrap lines
 set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
+set cul                           " Highlight the line the cursor is on (local to window)
 
 
 ""
