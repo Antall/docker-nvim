@@ -17,6 +17,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.7] - 2019-09-25
+### Changed
+- set `TARGET` in entrypoint.sh
+
 ## [v1.0.6] - 2019-09-23
 ### Changed
 - settings

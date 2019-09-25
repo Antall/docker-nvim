@@ -1,8 +1,6 @@
 #!/bin/sh
 
-# Get rid of TARGET so that neovim does not
-# open the first file in the directory.
-# TARGET=$(ls | head -n 1)
+TARGET=$(ls | head -n 1)
 
 resize > /dev/null
 
