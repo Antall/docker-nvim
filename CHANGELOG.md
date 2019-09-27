@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.8] - 2019-09-27
+### Added
+- LanguagueClient server
+- ruby and node to support neovim setup
+
+
 ## [v1.0.7] - 2019-09-25
 ### Changed
 - set `TARGET` in entrypoint.sh

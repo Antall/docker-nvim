@@ -11,6 +11,7 @@ exe 'source ' . s:path . '/custom/mappings.vim'
 exe 'source ' . s:path . '/custom/abbreviations.vim'
 
 " Plugin Configurations
+exe 'source ' . s:path . '/custom/plugins/language_client.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
 exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
 exe 'source ' . s:path . '/custom/plugins/nerdcommenter.vim'

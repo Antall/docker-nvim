@@ -26,5 +26,5 @@ Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Languages support
-
+" LanguageClient plugin
+Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }

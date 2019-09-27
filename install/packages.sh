@@ -11,14 +11,25 @@ apk add --update --no-cache \
   neovim \
   neovim-doc \
   fzf \
-  openssh-client
+  openssh-client \
+  ruby \
+  nodejs \
+  npm
 
 apk add --update --no-cache --virtual build-deps \
   build-base \
   curl \
-  python3-dev
+  python3-dev \
+  ruby-dev \
+  zlib-dev
 
 pip3 install neovim
+
+gem install \
+  neovim \
+  solargraph
+
+npm install -g neovim
 
 curl \
   --create-dirs \
