@@ -31,7 +31,7 @@ TARGET_NAME=$(basename $TARGET_PATH)
 docker run \
   --rm \
   -it \
-  -v "$TARGET_PATH:/root/workdir/$TARGET_NAME" \
+  -v "$TARGET_PATH:/home/neovim/workdir/$TARGET_NAME" \
   -v "$HOME/.ssh:/root/.ssh:ro" \
   "$IMAGE_NAME"
 

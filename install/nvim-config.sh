@@ -1,6 +1,6 @@
 #!/bin/sh
 
-INIT_FILE="/root/.config/nvim/init.vim"
+INIT_FILE="/home/neovim/.config/nvim/init.vim"
 
-nvim +PlugInstall +UpdateRemotePlugins +qall
+sudo -u neovim nvim +PlugInstall +UpdateRemotePlugins +qall
 
