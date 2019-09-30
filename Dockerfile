@@ -21,23 +21,27 @@ MAINTAINER antall <antallfernandes@gmail.com>
 
 ENV TERM xterm-256color
 ENV FZF_DEFAULT_COMMAND "find * -type f"
+ENV UID 1000
+ENV GID 1000
 
 COPY --from=builder /usr/local/bin/ctags /usr/local/bin
-
-WORKDIR /root/workdir
 
 COPY install /tmp/install
 
 RUN /tmp/install/packages.sh
 
 COPY entrypoint.sh /tmp/entrypoint.sh
-COPY init.vim /root/.config/nvim/init.vim
-COPY custom /root/.config/nvim/custom
+COPY init.vim /home/neovim/.config/nvim/init.vim
+COPY custom /home/neovim/.config/nvim/custom
 
 RUN \
   /tmp/install/nvim-config.sh; \
   /tmp/install/git-config.sh; \
   /tmp/install/clear.sh
 
+
+WORKDIR /home/neovim/workdir
+
 ENTRYPOINT ["/bin/sh", "/tmp/entrypoint.sh"]
+# ENTRYPOINT ["/bin/sh"]
 

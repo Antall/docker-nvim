@@ -17,6 +17,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.9] - 2019-10-12
+### Added
+- LanguageClient for Neovim
+
+### Security
+- introduced `neovim` user to run neovim
+- no longer running neovim under root privs
+
+
 ## [v1.0.8] - 2019-09-27
 ### Added
 - LanguagueClient server

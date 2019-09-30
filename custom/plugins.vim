@@ -27,4 +27,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " LanguageClient plugin
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'for': ['ruby', 'python', 'javascript'],
+    \ 'branch': 'next',
+    \ 'do': './install.sh',
+    \ }
