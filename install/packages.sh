@@ -26,6 +26,7 @@ apk add --update --no-cache \
   ruby \
   nodejs \
   git \
+  openjdk8-jre \
   npm
 
 apk add --update --no-cache --virtual build-deps \

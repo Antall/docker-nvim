@@ -26,6 +26,11 @@ Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" PlantUML
+Plug 'scrooloose/vim-slumlord'
+Plug 'aklt/plantuml-syntax'
+
+
 " LanguageClient plugin
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'for': ['ruby', 'python', 'javascript'],

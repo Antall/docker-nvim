@@ -17,6 +17,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.10] - 2019-10-13
+### Added
+- support for plantuml files
+
+
 ## [v1.0.9] - 2019-10-12
 ### Added
 - LanguageClient for Neovim
