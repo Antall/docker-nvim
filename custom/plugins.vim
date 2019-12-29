@@ -6,6 +6,12 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Comment functions so powerful—no comment necessary.
 Plug 'scrooloose/nerdcommenter'
 
+" Syntax checking hacks
+Plug 'scrooloose/syntastic'
+
+" cloudformation linter
+Plug 'speshak/vim-cfn'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -30,6 +36,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/vim-slumlord'
 Plug 'aklt/plantuml-syntax'
 
+" JSX syntax pretty highligher
+Plug 'maxmellon/vim-jsx-pretty'
 
 " LanguageClient plugin
 Plug 'autozimu/LanguageClient-neovim', {

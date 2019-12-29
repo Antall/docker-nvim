@@ -7,7 +7,7 @@ SHELL="/bin/sh"
 VIMPLUG_FILE="/home/neovim/.config/nvim/autoload/plug.vim"
 VIMPLUG_URL="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 ENV_DIR="/home/neovim/.local/share/vendorvenv"
-VIM_PROVIDER_PYLIB="python3_neovim_provider"
+NVIM_PROVIDER_PYLIB="python3_neovim_provider"
 PATH="/home/neovim/.local/bin:${PATH}"
 
 apk add --update --no-cache \
@@ -41,16 +41,15 @@ adduser -D -G "${GNAME}" -g "" -s "${SHELL}" "${UNAME}"
 echo "${UNAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 sudo -u neovim python3 -m venv "${ENV_DIR}/${NVIM_PROVIDER_PYLIB}"
-"${ENV_DIR}/${NVIM_PROVIDER_PYLIB}/bin/pip" install neovim
-
-curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | sudo -u neovim python3
-sudo -u neovim pipsi install python-language-server
+"${ENV_DIR}/${NVIM_PROVIDER_PYLIB}/bin/pip" install \
+  neovim \
+  python-language-server \
+  cfn-lint
 
 mkdir -p /home/neovim/.config/nvim/
-
 chown -R neovim:neovim /home/neovim/.config/nvim
 
-gem install --no-ri --no-rdoc \
+sudo -u neovim gem install --user-install \
   neovim \
   json \
   irb \

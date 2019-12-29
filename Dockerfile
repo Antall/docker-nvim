@@ -39,9 +39,8 @@ RUN \
   /tmp/install/git-config.sh; \
   /tmp/install/clear.sh
 
-
 WORKDIR /home/neovim/workdir
 
+USER neovim
 ENTRYPOINT ["/bin/sh", "/tmp/entrypoint.sh"]
-# ENTRYPOINT ["/bin/sh"]
 

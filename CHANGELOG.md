@@ -17,6 +17,26 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Security
 
+## [v1.0.11] - 2019-12-29
+### Added
+- Syntastic Plugin
+- JSX linter
+- Cloudformation linter
+
+### Changed
+- modified user from root to neovim
+
+### Deprecated
+
+### Removed
+
+### Fixed
+- path where python packages are installed
+- source the python virtual enviroment
+- set python and ruby _host_prog_ paths
+
+### Security
+
 ## [v1.0.10] - 2019-10-13
 ### Added
 - support for plantuml files
