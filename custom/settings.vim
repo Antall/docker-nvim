@@ -20,9 +20,9 @@ let mapleader = ","
 ""
 "" Backup and swap files
 ""
-
-set backupdir^=/tmp/_backup//    " where to put backup files.
-set directory^=/tmp/_temp//      " where to put swap files.
+set nobackup
+set noswapfile
+set noundofile
 
 ""
 "" Default Editor
