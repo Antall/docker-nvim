@@ -69,6 +69,7 @@ set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 set cul                           " Highlight the line the cursor is on (local to window)
+set colorcolumn=120
 
 
 ""
